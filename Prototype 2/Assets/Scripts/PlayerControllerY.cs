@@ -23,7 +23,7 @@ public class PlayerControllerY : MonoBehaviour
         transform.Translate(Vector3.right * horizontalinput * Time.deltaTime * speed);
         if (Input.GetKeyDown(KeyCode.Space))
         {//Launch a projectile from the Player}
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, transform.position + new Vector3 (0,1,0), projectilePrefab.transform.rotation);
         }
     }
 }
