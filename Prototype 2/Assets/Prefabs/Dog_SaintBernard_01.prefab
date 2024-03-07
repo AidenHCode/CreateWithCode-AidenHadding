@@ -1451,12 +1451,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.13397306, y: 0.21091628, z: 0.34065384}
-  m_Center: {x: 0.00432614, y: 0.10358553, z: 0.012870749}
+  m_Size: {x: 0.13397306, y: 0.20581931, z: 0.34065384}
+  m_Center: {x: 0.00432614, y: 0.10613401, z: 0.012870749}
 --- !u!114 &8160363572655654131
 MonoBehaviour:
   m_ObjectHideFlags: 0
