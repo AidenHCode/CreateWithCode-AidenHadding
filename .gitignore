@@ -14,6 +14,14 @@ Prototype 2/[Bb]uild/
 Prototype 2/[Bb]uilds/
 Prototype 2/[Ll]ogs/
 Prototype 2/[Uu]ser[Ss]ettings/
+
+Prototype 3/[Ll]ibrary/
+Prototype 3/[Tt]emp/
+Prototype 3/[Oo]bj/
+Prototype 3/[Bb]uild/
+Prototype 3/[Bb]uilds/
+Prototype 3/[Ll]ogs/
+Prototype 3/[Uu]ser[Ss]ettings/
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
