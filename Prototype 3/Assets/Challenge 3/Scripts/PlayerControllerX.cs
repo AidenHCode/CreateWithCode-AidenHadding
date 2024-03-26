@@ -21,6 +21,7 @@ public class PlayerControllerX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerRb = GetComponent<Rigidbody>();
         gameOver = false;
         Physics.gravity *= gravityModifier;
         playerAudio = GetComponent<AudioSource>();
@@ -36,6 +37,7 @@ public class PlayerControllerX : MonoBehaviour
         // While space is pressed and player is low enough, float up
         if (Input.GetKey(KeyCode.Space) && !gameOver)
         {
+            Debug.Log("Spacebar was pressed");
             playerRb.AddForce(Vector3.up * floatForce, ForceMode.Impulse);
         }
     }
@@ -50,6 +52,7 @@ public class PlayerControllerX : MonoBehaviour
             gameOver = true;
             Debug.Log("Game Over!");
             Destroy(other.gameObject);
+            Destroy(gameObject);
         } 
 
         // if player collides with money, fireworks
