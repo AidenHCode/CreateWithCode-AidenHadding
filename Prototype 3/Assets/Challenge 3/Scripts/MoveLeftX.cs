@@ -17,6 +17,7 @@ public class MoveLeftX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log("PCS working" + playerControllerScript);
         // If game is not over, move to the left
         if (playerControllerScript.gameOver == false)
         {

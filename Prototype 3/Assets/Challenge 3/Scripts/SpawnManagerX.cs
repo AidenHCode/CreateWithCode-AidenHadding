@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SpawnManagerX : MonoBehaviour
 {
-    public GameObject objectPrefabs;
-    private float spawnDelay = 2;
-    private float spawnInterval = 1.5f; 
+    public GameObject[] objectPrefabs;
+    private float spawnDelay = 0.1f;
+    private float spawnInterval = 0.5f;
     private PlayerControllerX playerControllerScript;
 
     // Start is called before the first frame update
@@ -20,14 +20,15 @@ public class SpawnManagerX : MonoBehaviour
     // Spawn obstacles
     void SpawnObject()
     {
+        //Debug.Log("Spawn Object Ran");
         // Set random spawn location and random object index
         Vector3 spawnLocation = new Vector3(30, Random.Range(5, 15), 0);
-        int index = Random.Range(objectPrefabs.Length);
+        int index = Random.Range(0, objectPrefabs.Length);
 
         // If game is still active, spawn new object
-        if (!playerControllerScript.gameOver == false)
+        if (playerControllerScript.gameOver == false)
         {
-            Instantiate(objectPrefabs, spawnLocation, objectPrefabs.transform.rotation);
+            Instantiate(objectPrefabs[index], spawnLocation, objectPrefabs[index].transform.rotation);
         }
 
     }
