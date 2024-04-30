@@ -8,11 +8,11 @@ public class Target : MonoBehaviour
     public ParticleSystem explosionParticle;
     private GameManager gameManager;
     private Rigidbody targetRb;
-    private float minSpeed = 14;
-    private float maxSpeed = 17;
+    private float minSpeed = 10;
+    private float maxSpeed = 15;
     private float maxTorque = 10;
     private float xRange = 4;
-    public float ySpawnPos = -6;
+    public float ySpawnPos = 0;
     public int pointValue;
     // Start is called before the first frame update
     void Start()
