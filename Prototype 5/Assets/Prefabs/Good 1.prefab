@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7916921820484348961}
   - component: {fileID: 2286705395431700681}
   - component: {fileID: 655346009157830559}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Good 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 960
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
