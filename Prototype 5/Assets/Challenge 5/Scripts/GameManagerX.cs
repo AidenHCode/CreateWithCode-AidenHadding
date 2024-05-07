@@ -15,7 +15,7 @@ public class GameManagerX : MonoBehaviour
     public List<GameObject> targetPrefabs;
 
     private int score;
-    private float spawnRate = 1.5f;
+    private float spawnRate = 5.0f;
     public bool isGameActive;
 
     private float spaceBetweenSquares = 2.5f; 
@@ -70,7 +70,7 @@ public class GameManagerX : MonoBehaviour
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
-        scoreText.text = "score";
+        scoreText.text = "Score: " + score;
     }
 
     // Stop game, bring up game over text and restart button
@@ -79,6 +79,7 @@ public class GameManagerX : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(false);
         isGameActive = false;
+        restartButton.gameObject.SetActive(true);
     }
 
     // Restart game by reloading the scene
